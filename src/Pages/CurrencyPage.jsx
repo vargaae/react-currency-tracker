@@ -12,7 +12,7 @@ const CurrencyPage = () => {
 
   return (
     <div>
-     
+     CURRENCY DETAILS
     </div>
   );
 };
