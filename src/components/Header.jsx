@@ -12,6 +12,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { useNavigate } from "react-router-dom";
+import { CurrencyState } from "../services/CurrencyContext";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -30,6 +31,8 @@ function Header() {
   function handleClick() {
     navigate("/");
   }
+
+  const { currency, setCurrency } = CurrencyState()
 
   const darkTheme = createTheme({
     palette: {
@@ -54,12 +57,14 @@ function Header() {
             </Typography>
             <Select
               variant="outlined"
-              id="demo-simple-select"
+              id="currency-select"
               style={{
                 width: 100,
                 height: 40,
                 marginRight: 15,
               }}
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={"USD"} key={"USD"}>
                 USD
