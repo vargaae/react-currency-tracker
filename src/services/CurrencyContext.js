@@ -4,14 +4,14 @@ const Currency = createContext();
 
 const CurrencyContext = ({ children }) => {
   const [currency, setCurrency] = useState("USD");
-  const [symbol, setSymbol] = useState("Ft");
+  const [symbol, setSymbol] = useState("HUF");
 
   useEffect(() => {
     if (currency === "USD") setSymbol("$");
     else if (currency === "HUF") setSymbol("Ft");
   }, [currency]);
 
-  return <Currency.Provider value={{currency,symbol, setCurrency}}>{children}</Currency.Provider>;
+  return <Currency.Provider value={{currency,symbol,setCurrency}}>{children}</Currency.Provider>;
 };
 
 export default CurrencyContext;

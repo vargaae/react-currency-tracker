@@ -1,8 +1,10 @@
 import React from "react";
+import Banner from "../components/Banner/Banner";
 
 const Homepage = () => {
   return (
     <>
+      <Banner />
       <section className="section">
         <div className="section__item section__item--start">
           <h2>Sign up now</h2>
