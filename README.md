@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Currency Tracker Project
+
+![CurrencyTracker](https://github.com/vargaae/react-currency-tracker/blob/main/public/screenshot.png)
+
+## Introduction
+This is a code repository for the Front End of the Fullstack Application. 
+
+This currency tracker application created with React and multiple APIs powered by https://rapidapi.com.
+
+## Developing - In process
+Now I am working on the integration of the currency tracker API.
+Ready: UI, Header, Redux-toolkit store, Context API, Fetch APIs with Axios, HomePage: ->Banner with Carousel
+
+## Used libraries, packages
+Axios, Material-UI v4, reduxjs/toolkit, react-router-dom, SASS, react-alice-carousel
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

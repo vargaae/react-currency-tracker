@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, makeStyles, Typography } from "@material-ui/core";
+import Carousel from "./Carousel";
 
 const useStyles = makeStyles(() => ({
   banner: {
+    // backgroundImage: "url(./banner.jpg)",
     backgroundImage: "url(./currency-basket.webp)",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -49,6 +51,7 @@ const Banner = () => {
           >
             Keep track of information about currencies
           </Typography>
+          <Carousel />
         </div>
       </Container>
     </div>

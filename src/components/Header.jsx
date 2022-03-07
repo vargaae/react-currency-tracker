@@ -12,7 +12,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { useNavigate } from "react-router-dom";
-import { CurrencyState } from "../services/CurrencyContext";
+import { CurrencyState } from "../CurrencyContext";
 
 const useStyles = makeStyles((theme) => ({
   title: {

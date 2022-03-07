@@ -6,7 +6,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import store from './app/store';
-import CurrencyContext from './services/CurrencyContext';
+import CurrencyContext from './CurrencyContext';
+import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 
 ReactDOM.render(
   <React.StrictMode>
